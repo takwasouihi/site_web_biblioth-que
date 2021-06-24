@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>success</title>
+</head>
+<body>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+<script>
+    Swal.fire({
+        type: 'success',
+        title: "Success",
+        text: "livre supprimé ",
+        showConfirmButton: false,
+        allowOutsideClick: false
+    });
+    setTimeout(function () {
+        window.location.replace("../views/dashboard/livres.php");
+    }, 2000);
+</script>
+</body>
+</html>
